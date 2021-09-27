@@ -1,0 +1,27 @@
+
+header h1{
+    color: Black;
+    font-size: 56px;
+}
+header div a{
+    text-decoration: none;
+    color: #888;
+    margin-right: 10px;
+}
+footer{
+    color: #888;
+}
+form{
+    padding: 20px 0px;
+}
+input{
+    border:1px solid #ccc;
+    padding:8px;
+}
+button{
+    cursor: pointer;
+    border:1px solid #888;
+    background-color: #888;
+    color: white;
+    padding: 8px;
+}
