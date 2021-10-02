@@ -56,8 +56,8 @@ app.get("/weather", (req, res) => {
             if (error) {
                 return res.send({ error });
             }
-            let { responseData, location } = weather;
-            res.send({ responseData, location, address: req.query.address });
+            let { responseData, location, weather_icons } = weather;
+            res.send({ responseData, location, address: req.query.address, weather_icons });
         })
     })
 })

@@ -10,7 +10,7 @@ let forCast = ({ latitude, longitude, location }, callback) => {
             callback("Invalid input, Please provide the correct data", undefined)
         } else {
             let responseData = "Today weather is " + response.body.current.weather_descriptions[0] + ". It is currently " + response.body.current.temperature + " degree C. There is " + response.body.current.precip + " % of rain.";
-            callback(undefined, { responseData, location });
+            callback(undefined, { responseData, location, weather_icons: response.body.current.weather_icons[0] });
         }
     })
 
